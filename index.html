@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
@@ -20,77 +17,94 @@
  <body>
   <div class="container">
    <div class="row">
-    <div class="col-12"> 
      <div class="app-style">  
-       
-      <p class="date" id="live"></p> 
-      <p class="time" id="clock">8</p>
-
- <form class="search-btn" id="search-form">
-     <div class="row">
-       <div class="col-6">
-           <input type="search" placeholder="Type a city..."  class="form-control" id="city-input" />
-          </div>
-        <div class="col-2 ">
-      <input type="submit" value="Search" class="btn btn-primary btn-control "/></div>
- <div class="col-4"> <button class="btn btn-success location-button" id="myLocation"> Current position📍</button></div>
+       <p class="date" id="live">date</p>
+       <p class="time" id="clock">8</p>
+<form class="search-btn" id="search-form">
+  <div class="row">
+    <div class="col-6">
+        <input type="search" placeholder="Type a city..."  class="form-control" id="city-input" />
+        <div pseudo="-webkit-search-cancel-button" aria-label="cancel" role="button"></div>
+    </div>
+    <div class="col-2">
+       <input type="submit" value="Search" class="btn btn-primary btn-control "/>
+    </div>
+    <div class="col-4"> 
+      <button class="btn btn-success location-button" id="myLocation"> Current position📍</button>
+    </div>
+  </div>
  </form>
- 
+  <div class="weather-informations">
    <div class="row">
      <div class="col-6">
     <h1 
     id="city"> Budapest
     </h1>
+    <ul>
+     <li>
+      Humidity: 
+      <strong>54%</strong>
+     </li>
+     <li> 
+      Wind: 
+      <strong>7.72km/h</strong>
+    </li>
+    </ul>
   </div>
   <div class="col-6">
     <h2>
       <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" class="icon">
-      <span id="temperature" > 4 ˚C</span>    
+      <span id="temperature">4˚C</span>    
     </h2>
-    </div>
+  </div>
+  
+<div class="weatherForecast row">
+  <div class="col">
+      <div class="day-control">Fri</div>
+      <div class="weather-icon">🌨</div>
+      <div class="forecast-temperature">
+      <span class="forecast-temperature-max">7˚</span>
+      <span class="forecast-temperature-min">3˚</span>
+  </div> 
      
-    <h3>
-      <i class="fas fa-calendar-week"></i> 5-Day weather forecast
-    </h3>
-
- <footer>
-<div class="forecast-style">
- <div class="day-control">
-  <div class="row">
-    <div class="col">Fri</div>
-    <div class="col">Sat</div>
-    <div class="col">Sun</div>
-    <div class="col">Mon</div>
-    <div class="col">Tue</div>
+  </div>
+  <div class="col">
+      <div class="day-control">Sat</div>
+      <div class="weather-icon">🌨</div>
+      <div class="forecast-temperature">
+      <span class="forecast-temperature-max">7˚</span>
+      <span class="forecast-temperature-min">3˚</span>
+  </div> 
+  </div>
+  <div class="col">
+      <div class="day-control">Sun</div>
+      <div class="weather-icon">🌨</div>
+      <div class="forecast-temperature">
+      <span class="forecast-temperature-max">7˚</span>
+      <span class="forecast-temperature-min">3˚</span>
+  </div> 
+  </div>
+  <div class="col">
+      <div class="day-control">Mon</div>
+      <div class="weather-icon">🌨</div>
+      <div class="forecast-temperature">
+      <span class="forecast-temperature-max">7˚</span>
+      <span class="forecast-temperature-min">3˚</span>
+  </div> 
+  </div>
+  <div class="col">
+      <div class="day-control">Tue</div>
+      <div class="weather-icon">🌨</div>
+      <div class="forecast-temperature">
+      <span class="forecast-temperature-max">7˚</span>
+      <span class="forecast-temperature-min">3˚</span>
+  </div> 
   </div>
 </div>
-<div class="icon-control">
- <div class="icon-style">
-  <div class="row">
-    <div class="col">🌨</div>
-    <div class="col">🌤</div>
-    <div class="col">☁️</div>
-    <div class="col">☀️</div>
-    <div class="col">🌦</div>
-    </div>
-  </div>
- </div>
-<div class="temp-control">
-  <div class="row">
-    <div class="col">-7º/3º</div>
-    <div class="col">-5º/2º</div>
-    <div class="col">-2º/3º</div>
-    <div class="col">-4º/4º</div>
-    <div class="col">-3º/5º</div>
-   </div>
-  </div>
- </div>
-</footer>
 <small>
   <a href="https://github.com/admbalogh/weather-app-project/commit/9ec768336e60692a5077515e21ff308d8628ef72" 
 target="_blank"> Open-source Code </a> by Adam Balogh
 </small>
-  </div>
   <script src="homework.jsx"> </script>
  </body>
 </html>
