@@ -1,12 +1,15 @@
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Mono", monospace, "Inter", sans-serif;
+  background: #f9f7fe;
+  color: rgb(0, 0, 0);
 }
+
 h1 {
-  color: lightslategray;
+  color: rgb(107, 127, 148);
   font-size: 32px;
-  padding-top: 50px;
-  font-weight: 200;
-  text-transform: initial;
+  padding-top: 20px;
+  font-weight: 300;
+  text-transform: capitalize;
   text-align: center;
 }
 
@@ -31,11 +34,6 @@ li {
   padding: 20px;
 }
 
-body {
-  color: rgb(0, 0, 0);
-  font-family: "Inter", sans-serif;
-  background: #ffffff;
-}
 a {
   text-decoration: none;
 }
@@ -112,9 +110,8 @@ a {
   border-radius: 30px;
 }
 .form-control {
-  display: block;
-  margin-left: 280px;
-  max-width: 150px;
+  margin: 0 auto;
+  max-width: 400px;
   text-align: center;
 }
 .day-control {
