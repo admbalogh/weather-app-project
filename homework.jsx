@@ -72,23 +72,42 @@ if (minute < 10) {
 
 let liveDate = document.querySelector("#live");
 liveDate.innerHTML = `${year}.${currentMonth}.${date}.${currentDay}`;
+
+//Final Project Date conversion
+
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
 //Final Project
-function displayWheatherForecast(response) {
+function displayWheatherForecast(response, index) {
   console.log(response.data.daily);
+  let forecast = response.data.daily;
 
   let forecastElement = document.querySelector("#forecast");
   let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
   let forecastHtml = "";
-  days.forEach(function (day) {
-    forecastHtml += `<div class="col-2">
-       <div class="day-control">${day}</div>
-        <div class="weather-icon">🌨</div>
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHtml += `<div class="col-2">
+       <div class="day-control">${formatDay(forecastDay.dt)}</div>
+        <img src="http://openweathermap.org/img/wn/${
+          forecastDay.weather[0].icon
+        }@2x.png" alt="clear" width="100"/>
         <div class="forecast-temperature">
-       <span class="forecast-temperature-max">7˚</span>
-      <span class="forecast-temperature-min">3˚</span>
+       <span class="forecast-temperature-max">${Math.round(
+         forecastDay.temp.max
+       )}˚</span>
+      <span class="forecast-temperature-min">${Math.round(
+        forecastDay.temp.min
+      )}˚</span>
      </div>    
     </div>
    </div>`;
+    }
   });
   forecastElement.innerHTML = forecastHtml;
 }
