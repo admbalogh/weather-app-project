@@ -35,7 +35,7 @@
  </form>
   <div class="weather-informations">
    <div class="row">
-     <div class="col-6">
+     <div class="col-5">
     <h1 
     id="city"> 
     </h1>
@@ -53,14 +53,15 @@
     </li>
     </ul>
   </div>
-  <div class="col-6">
+  <div class="col-7">
     <h2>
       <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="clear" class="icon" id="icon" />
-      <span id="temperature"></span>˚C    
+      <span id="temperature"></span>
+     <span class="units"><a href="#" class="active" id="celsiusLink">C˚</a>|<a href="#" id="fahrenheitLink">˚F</a></span>    
     </h2>
   </div>
   
-<div class="weatherForecast row">
+<!-- <div class="weatherForecast row">
   <div class="col">
       <div class="day-control">Fri</div>
       <div class="weather-icon">🌨</div>
@@ -102,10 +103,13 @@
       <span class="forecast-temperature-min">3˚</span>
   </div> 
   </div>
-</div>
-<small>
+</div> -->
+
+<small class="source-link">
+</br>
+This project is coded by Adam Balogh, and is Open-sourced
   <a href="https://github.com/admbalogh/weather-app-project/commit/9ec768336e60692a5077515e21ff308d8628ef72" 
-target="_blank"> Open-source Code </a> by Adam Balogh
+target="_blank" >  on GitHub </a>  and hosted <a href="" target="_blank"> on Netlify</a>
 </small>
   <script src="homework.jsx"> </script>
  </body>

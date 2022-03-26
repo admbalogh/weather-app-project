@@ -7,7 +7,8 @@ body {
 h1 {
   color: rgba(0, 0, 0, 0.726);
   font-size: 40px;
-  margin: 100px 0 40px;
+  margin: 90px 60px;
+  text-align: center;
   font-weight: 350;
   text-transform: capitalize;
 }
@@ -83,9 +84,6 @@ a {
   max-width: 500px;
   text-align: center;
 }
-.icon {
-  font-size: 50px;
-}
 
 .weatherForecast {
   text-align: center;
@@ -97,6 +95,11 @@ a {
   text-align: center;
   margin: 0 auto;
   font-weight: 300;
+}
+.icon {
+  position: relative;
+  left: 30px;
+  bottom: 30px;
 }
 .weather-icon {
   font-size: 50px;
@@ -113,4 +116,21 @@ a {
 }
 .forecast-temperature-min {
   opacity: 0.6;
+}
+.units {
+  position: relative;
+  bottom: 25px;
+  right: 15px;
+  font-size: 16px;
+}
+.active {
+  color: black;
+  cursor: default;
+}
+.active:hover {
+  color: black;
+}
+
+.source-link {
+  text-align: center;
 }
