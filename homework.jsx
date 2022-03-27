@@ -181,29 +181,4 @@ function getMyPosition() {
 let locationButton = document.querySelector("#myLocation");
 locationButton.addEventListener("click", getMyPosition);
 
-let celsiusTemperature = null;
-
-function displayCelsuis(event) {
-  event.preventDefault();
-  celsius.classList.add("active");
-  fahrenheit.classList.remove("active");
-  let celsiusTemperatureElement = document.querySelector("#temperature");
-  celsiusTemperatureElement.innerHTML = Math.round(celsiusTemp);
-}
-
-let celsius = document.querySelector("#celsiusLink");
-celsius.addEventListener("click", displayCelsuis);
-
-function displayFahrenheit(event) {
-  event.preventDefault();
-  fahrenheit.classList.add("active");
-  celsius.classList.remove("active");
-  let temperatureElement = document.querySelector("#temperature");
-  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
-}
-
-let fahrenheit = document.querySelector("#fahrenheitLink");
-fahrenheit.addEventListener("click", displayFahrenheit);
-
 searchCity("London");

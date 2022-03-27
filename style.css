@@ -1,23 +1,25 @@
 body {
   font-family: "Roboto Mono", monospace, "Inter", sans-serif;
-  background: #f9f7fe;
+  background: #26b7f05e;
   color: rgb(0, 0, 0);
 }
 
 h1 {
-  color: rgba(0, 0, 0, 0.726);
+  color: rgba(82, 81, 81, 0.911);
   font-size: 40px;
-  margin: 90px 60px;
+  margin: 100px 60px;
   text-align: center;
   font-weight: 350;
   text-transform: capitalize;
 }
 
 h2 {
+  color: rgba(82, 81, 81, 0.911);
   padding: 70px;
   font-weight: 300;
   font-size: 50px;
   margin: 0 auto;
+  margin-top: 15px;
 }
 form {
   margin-top: 40px;
@@ -26,6 +28,7 @@ form {
 }
 
 ul {
+  color: rgba(56, 55, 55, 0.932);
   padding: 0;
   margin: 0;
   list-style: none;
@@ -52,13 +55,13 @@ a {
   font-size: 12px;
   text-align: right;
   margin-bottom: 70px;
-  border-bottom: 1px solid rgba(66, 65, 65, 0.336);
+  border-bottom: 1px solid #f9f7fe;
   padding-bottom: 10px;
 }
 .app-style {
-  border: 1px solid grey;
-  box-shadow: 4px 4px 4px rgba(101, 102, 102, 0.445);
-  border-radius: 10px;
+  border: 1px solid rgba(224, 224, 224, 0.55);
+  box-shadow: 0 0 80px rgba(138, 134, 134, 0.38);
+  border-radius: 50px;
   padding: 20px 40px;
   margin: 60px auto;
   max-width: 900px;
@@ -67,21 +70,28 @@ a {
 .btn-control {
   color: mintcream;
   background-color: rgb(0, 110, 255);
-  font-size: 12px;
+  border-color: #26b7f05e;
+  font-size: 10px;
   padding: 10px 20px;
   border-radius: 30px;
   font-weight: 400;
 }
+.btn-control:hover {
+  background-color: rgba(0, 17, 255, 0.822);
+  transition: ease-in-out 350ms;
+  cursor: default;
+  border-color: rgba(113, 203, 255, 0.781);
+}
 .location-button {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 10px;
   padding: 10px 20px;
   border-radius: 30px;
 }
 
 .form-control {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 400px;
   text-align: center;
 }
 
@@ -117,18 +127,6 @@ a {
 }
 .units {
   position: relative;
-  bottom: 25px;
-  right: 15px;
-  font-size: 16px;
-}
-.active {
-  color: black;
-  cursor: default;
-}
-.active:hover {
-  color: black;
-}
-
-.source-link {
-  text-align: center;
+  right: 20px;
+  font-size: 36px;
 }
