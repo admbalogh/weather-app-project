@@ -1,12 +1,12 @@
 body {
   font-family: "Roboto Mono", monospace, "Inter", sans-serif;
-  background: #26b7f05e;
+  background: #cef1ff5e;
   color: rgb(0, 0, 0);
 }
 
 h1 {
   color: rgba(82, 81, 81, 0.911);
-  font-size: 40px;
+  font-size: 35px;
   margin: 100px 60px;
   text-align: center;
   font-weight: 350;

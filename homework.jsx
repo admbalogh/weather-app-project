@@ -181,4 +181,4 @@ function getMyPosition() {
 let locationButton = document.querySelector("#myLocation");
 locationButton.addEventListener("click", getMyPosition);
 
-searchCity("London");
+searchCity("Budapest");
