@@ -20,50 +20,44 @@
      <div class="app-style">  
        <p class="date" id="live">date</p>
        <p class="time" id="clock">8</p>
-<form class="search-btn" id="search-form">
-  <div class="row">
-    <div class="col-7">
-        <input type="search" placeholder="Type a city..."  class="form-control" id="city-input" />
-        <div pseudo="-webkit-search-cancel-button" aria-label="cancel" role="button"></div>
-    </div>
-    <div class="col-2">
+        <form class="search-btn" id="search-form">
+         <div class="row">
+           <div class="col-7">
+            <input type="search" placeholder="Type a city..."  class="form-control" id="city-input" />
+         <div pseudo="-webkit-search-cancel-button" aria-label="cancel" role="button">
+           </div>
+      </div>
+      <div class="col-2">
        <input type="submit" value="Search" class="btn btn-primary btn-control "/>
-    </div>
-    <div class="col-3"> 
+       </div>
+       <div class="col-3"> 
       <button class="btn btn-success location-button" id="myLocation">Location📍</button>
-    </div>
- </form>
-  <div class="weather-informations">
-   <div class="row">
-     <div class="col-5">
-    <h1 
-    id="city"> 
-    </h1>
-    <ul>
-      <li>
-        Description:<span id="weather-description"></span>
-      </li>
-     <li>
-      Humidity: 
-      <strong id="humidity"></strong>%
-     </li>
-     <li> 
-      Wind: 
-      <strong id="windspeed"></strong>km/h
-    </li>
-    </ul>
-  </div>
-  <div class="col-7">
-    <h2>
-      <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="clear" width="100" class="icon" id="icon" />
-      <span id="temperature"></span>
-     <span class="units">C˚</span>    
-    </h2>
-  </div>
+            </div>
+          </div>
+     </form>
+        <div class="weather-informations">
+          <div class="row">
+           <div class="col-5">
+            <h1 id="city"> </h1>
+              <ul>
+              <li>
+                Description:<span id="weather-description"></span>
+              </li>
+              <li> Humidity:  <strong id="humidity"></strong>%
+              </li>
+              <li> Wind:<strong id="windspeed"></strong>km/h
+              </li>
+             </ul>
+          </div>
+        <div class="col-7">
+          <h2> <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="clear" width="100" class="icon" id="icon" />
+             <span id="temperature"></span>
+             <span class="units">C˚</span>    
+          </h2>
+        </div>
+      </div>
   
- <div class="weatherForecast row" id="forecast">
-
- </div>
+  <div class="weatherForecast row" id="forecast"> </div>
  
 
 <small class="source-link">
@@ -72,6 +66,6 @@ This project is coded by Adam Balogh, and is Open-sourced on
   <a href="https://github.com/admbalogh/weather-app-project/commit/9ec768336e60692a5077515e21ff308d8628ef72" 
 target="_blank" >  GitHub </a>  and hosted <a href="https://elated-newton-3f07f1.netlify.app" target="_blank"> on Netlify</a>
 </small>
-  <script src="homework.jsx"> </script>
+  <script src="homework.js"> </script>
  </body>
 </html>
